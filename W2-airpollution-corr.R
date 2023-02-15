@@ -1,6 +1,6 @@
 source("W2-air pollution-complete.R")
 corr <- function(directory, threshold = 0) {
-  passed_complete <- complete(directory, 1:332)
+  passed_complete <- complete(directory, 1:332) #"complete" function from "W2-air pollution-complete.R"
   passed_threshold <- subset(passed_complete, nobs > threshold)
   correlations <- c()
   for (i in passed_threshold$id) {
