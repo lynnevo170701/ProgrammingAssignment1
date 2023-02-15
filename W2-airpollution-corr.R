@@ -1,3 +1,4 @@
+source("W2-air pollution-complete.R")
 corr <- function(directory, threshold = 0) {
   passed_complete <- complete(directory, 1:332)
   passed_threshold <- subset(passed_complete, nobs > threshold)
